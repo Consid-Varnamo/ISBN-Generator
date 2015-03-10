@@ -7,13 +7,18 @@ namespace Consid.ISBN.Generator
 {
     static class Common
     {
-        public static IEnumerable<string> GenerateISBNNumberSeries()
+        public static IEnumerable<string>GenerateISBNNumberSeries(int count)
         {
             int seed = Convert.ToInt32(DateTime.Now.Ticks & 0x7FFFFFFF);
             Random rnd = new Random(seed);
 
             for (int i = 0; i < 10; i++)
                 yield return CreateISBNNumber(rnd);
+        }
+
+        public static IEnumerable<string> GenerateISBNNumberSeries()
+        {
+            return GenerateISBNNumberSeries(10);
         }
 
         private static string CreateISBNNumber(Random rnd)
