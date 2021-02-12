@@ -1,14 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consid.ISBN.Generator", "Consid ISBN Generator\Consid.ISBN.Generator.csproj", "{0ADF34A6-861A-4CCB-9BD8-7070DF3422F9}"
-EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{03133C9A-511C-4BAB-B003-B37CAA0950CC}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0ADF34A6-861A-4CCB-9BD8-7070DF3422F9} = {0ADF34A6-861A-4CCB-9BD8-7070DF3422F9}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +24,11 @@ Global
 		{0ADF34A6-861A-4CCB-9BD8-7070DF3422F9}.Release|x86.Build.0 = Release|x86
 		{0ADF34A6-861A-4CCB-9BD8-7070DF3422F9}.SingleImage|x86.ActiveCfg = Release|x86
 		{0ADF34A6-861A-4CCB-9BD8-7070DF3422F9}.SingleImage|x86.Build.0 = Release|x86
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.CD_ROM|x86.ActiveCfg = CD_ROM
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.CD_ROM|x86.Build.0 = CD_ROM
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.Debug|x86.ActiveCfg = DVD-5
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.Debug|x86.Build.0 = DVD-5
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.DVD-5|x86.ActiveCfg = DVD-5
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.DVD-5|x86.Build.0 = DVD-5
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.Release|x86.ActiveCfg = SingleImage
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.Release|x86.Build.0 = SingleImage
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.SingleImage|x86.ActiveCfg = SingleImage
-		{03133C9A-511C-4BAB-B003-B37CAA0950CC}.SingleImage|x86.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E4A9015-1BAD-4996-8487-8370F82BB144}
 	EndGlobalSection
 EndGlobal
