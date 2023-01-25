@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static Consid.Isbn.Core.Generator;
 
 namespace Consid.ISBN.Generator
 {
@@ -18,20 +14,22 @@ namespace Consid.ISBN.Generator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Generate();
-            
+            CreateIsbns();
+
         }
 
-        private void Generate()
+        private void CreateIsbns()
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (string s in Common.GenerateISBNNumberSeries())
+            foreach (string s in Generate(10))
+            {
                 sb.AppendLine(s);
+            }
 
             txtISBNList.Text = sb.ToString();
-            
-            this.Focus();
+
+            Focus();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -41,7 +39,7 @@ namespace Consid.ISBN.Generator
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            Generate();
+            CreateIsbns();
         }
     }
 }
